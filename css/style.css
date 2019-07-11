@@ -1,0 +1,509 @@
+body {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.navbar,
+.header,
+.services,
+.our-team,
+.test,
+.our-proj,
+.footer{
+    min-width: 1170px;
+}
+.header .overlay{
+    min-width: 1170px;
+}
+
+.con {
+    width: 1170px;
+    margin: 0 auto;
+
+}
+
+/*start my nav*/
+.navbar {
+    height: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar .brand {
+    float: left;
+    width: 40%;
+    text-transform: uppercase;
+    color: #ffffff;
+
+}
+
+.navbar .brand span {
+    color: #1abc9c;
+}
+
+.navbar .links {
+    float: left;
+    width: 60%;
+
+}
+
+.navbar .links li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.navbar .links li a {
+
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+.navbar .links li.active a,
+.navbar .links li a:hover {
+    color: #1abc9c;
+}
+
+.navbar .links li.active,
+.navbar .links li:hover {
+
+    cursor: pointer;
+    border-bottom: 2px solid #1abc9c;
+}
+
+/*end my nav*/
+/*<!--start header-->*/
+.header {
+    background: url("../images/header.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 600px
+
+}
+
+
+.header .bx-wrapper {
+    height: 100%;
+    box-shadow: none;
+    border: 0;
+    background: none;
+}
+
+.header .slider {
+    height: 100%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.header .slider span {
+    color: #1abc9c;
+}
+
+.header .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.header .slider h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.header .slider li {
+    display: block;
+    height: 200px;
+}
+
+/*<!--end header-->*/
+
+/*start services*/
+.services {
+    padding: 80px 20px;
+}
+
+.services h2 {
+    margin: -39px 0 87px;
+}
+
+.services h2 span {
+    color: #1abc9c;
+
+}
+
+.services .item {
+    float: left;
+    width: 33.33333%;
+    margin-bottom: 20px;
+}
+
+.services .item i {
+    float: left;
+    width: 20%;
+    margin-top: 40px;
+    color: #1abc9c;
+    margin-right: 10%;
+}
+
+.services .item .info {
+    float: left;
+    width: 65%;
+}
+
+.services .item .info p {
+    color: #d4d4d4;
+    line-height: 20px;
+}
+
+/*end services*/
+/*start our team*/
+.our-team .box {
+
+    float: left;
+}
+
+.our-team .box p {
+    color: #888;
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+.our-team .box h2 {
+    padding: 0 0 15px;
+}
+
+.our-team .box:first-child {
+    width: 35%;
+}
+
+.our-team .box:not(:first-child) {
+    width: 15.25%;
+    margin-left: 1%;
+    position: relative;
+    transition: all 2s ease-in-out;
+
+}
+
+.our-team .box:not(:first-child):hover .overlay {
+    display: block;
+}
+
+.our-team .box:not(:first-child) .overlay {
+
+    background-color: rgba(26, 188, 156, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 183px;
+    color: #fff;
+    text-align: center;
+    height: 100%;
+    display: none;
+
+
+}
+
+.our-team .box:not(:first-child) img {
+    width: 100%;
+
+}
+
+/*end our team*/
+/*start testmonials*/
+.test {
+    background: url("../images/Slide2.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 80px 0;
+
+}
+
+.test .t_overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    z-index: 1;
+
+}
+
+.test h2 {
+    font-size: 30px;
+    margin: 80px 0 10px;
+}
+
+.test q {
+    font-size: 20px;
+    line-height: 2;
+    color: #999999;
+    display: block;
+    margin-top: 130px;
+}
+
+.test p {
+    font-size: 30px;
+    color: #1abc9c;
+}
+
+.test .test-slider > div {
+    display: none;
+}
+
+.test .test-slider .active {
+    display: block;
+}
+
+/*end testmonials*/
+/*start our projects*/
+.our-proj li {
+    display: inline-block;
+    list-style: none;
+    padding: 15px 25px;
+    margin: 25px 5px;
+    color: #999999;
+    border: 1px solid #999999;
+    border-radius: 5px;
+}
+
+.our-proj li.active {
+    background-color: #1abc9c;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.our-proj li:hover {
+    background-color: #1abc9c;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.our-proj .box {
+    float: left;
+    position: relative;
+}
+
+
+.our-proj .box:hover .overlay {
+    display: block;
+}
+
+.our-proj .box .overlay {
+
+    background-color: rgba(26, 188, 156, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    line-height: 215px;
+    color: #fff;
+    text-align: center;
+    display: none;
+    margin: 10px 10px;
+    overflow: hidden;
+
+}
+
+.our-proj .box .overlay input {
+    background: none;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 15px 25px;
+
+}
+
+.our-proj .box .overlay i {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+.our-proj .box img {
+    width: 370px;
+    height: 215px;
+    margin: 10px 10px;
+
+}
+
+.our-proj .wall_e {
+    margin-top: 100px;
+    margin-left: 200px;
+    position: relative;
+}
+
+.our-proj .wall_e .w-overlay {
+
+    background-color: rgba(26, 188, 156, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 800px;
+    height: 500px;
+    line-height: 500px;
+    color: #fff;
+    text-align: center;
+    display: none;
+    overflow: hidden;
+
+}
+
+.our-proj .wall_e:hover .w-overlay {
+    display: block;
+}
+
+.our-proj .wall_e img {
+    width: 800px;
+    height: 500px;
+
+}
+
+.our-proj .wall_e .w-overlay i {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.our-proj .wall_e .w-overlay input {
+    background: none;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 15px 25px;
+
+}
+
+
+/*end  our projects*/
+/*start footer*/
+.footer {
+    margin-top: 80px;
+    background-color: #232323;
+    height: 400px;
+    overflow: hidden;
+}
+
+.footer .foot {
+
+    width: 242.5px;
+    float: left;
+    color: #757575;
+    padding-top: 40px;
+    padding-right: 50px;
+
+}
+
+.footer .foot h2 {
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+.footer .foot p{
+    font-size: medium;
+    line-height: 1.7;
+}
+.footer .foot i{
+    color: #9c9c9c;
+    margin: 50px 10px ;
+    padding: 10px 10px ;
+    border: 1px solid #575757 ;
+    border-radius: 5px;
+}
+.footer .foot i:hover{
+    color: #1abc9c;
+    cursor: pointer;
+}
+.footer .foot span{
+    color: #9c9c9c;
+    border: 1px solid #9c9c9c;
+    padding: 15px 20px 15px 20px;
+    display: inline-block;
+    margin: 5px 1px;
+    border-radius: 5px;
+}
+.footer .foot .post{
+    margin-bottom: 15px;
+    width: 100%;
+}
+.footer .foot .post p{
+    float: left;
+    font-size:12px;
+    line-height: 1;
+}
+.footer .foot .post img{
+    float: left;
+    width: 80px;
+    height: 55px;
+    margin-right: 15px;
+}
+.footer .foot .post span{
+    padding: 0 0 0 0;
+    margin: 0 0;
+    border: none;
+}
+.footer .foot:last-child span{
+    padding: 0 0 0 0;
+    margin: 0 0;
+    border: none;
+}
+.footer .foot:last-child hr{
+    margin: 20px 0 20px 0 ;
+    border: 0.5px solid #575757;
+}
+
+/*end footer*/
+
+/*myframwork*/
+.clearfix {
+    clear: both;
+}
+
+
+.spicalheading {
+    position: relative;
+}
+
+.hr {
+    margin-bottom: 60px;
+}
+
+.spicalheading:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 40px;
+    border-bottom: 2px solid #333;
+
+}
